@@ -68,7 +68,7 @@ services:
       - GF_FEATURE_TOGGLES_ENABLE=traceqlEditor
       - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/dashboards/umami.json
       - VIRTUAL_HOST=$DDEV_HOSTNAME
-      - HTTP_EXPOSE=3000:3000
+      - HTTPS_EXPOSE=3000:3000
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
       com.ddev.approot: $DDEV_APPROOT
